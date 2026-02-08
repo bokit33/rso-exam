@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "question": "Which radiation protection principle requires exposures to be kept as low as reasonably achievable?",
+    "options": [
+      "Justification",
+      "Optimization (ALARA)",
+      "Limitation",
+      "Monitoring"
+    ],
+    "answer_index": 1,
+    "difficulty": "standard",
+    "topic": "demo"
+  },
+  {
+    "id": 2,
+    "question": "The primary source of staff exposure during fluoroscopy is:",
+    "options": [
+      "Primary beam",
+      "Scatter from patient",
+      "Background radiation",
+      "Tube housing leakage only"
+    ],
+    "answer_index": 1,
+    "difficulty": "standard",
+    "topic": "demo"
+  },
+  {
+    "id": 3,
+    "question": "The SI unit of activity is:",
+    "options": [
+      "Gy",
+      "Sv",
+      "Bq",
+      "C/kg"
+    ],
+    "answer_index": 2,
+    "difficulty": "standard",
+    "topic": "demo"
+  },
+  {
+    "id": 4,
+    "question": "Which statement best describes stochastic effects?",
+    "options": [
+      "Have a threshold and severity increases",
+      "Probability increases with dose; severity does not",
+      "Only occur at high dose rates",
+      "Limited to skin"
+    ],
+    "answer_index": 1,
+    "difficulty": "standard",
+    "topic": "demo"
+  },
+  {
+    "id": 5,
+    "question": "A controlled area is best described as:",
+    "options": [
+      "Area with access controls due to potential occupational exposure",
+      "Any public hallway",
+      "Cafeteria",
+      "Parking lot"
+    ],
+    "answer_index": 0,
+    "difficulty": "standard",
+    "topic": "demo"
+  },
+  {
+    "id": 6,
+    "question": "In CT dose reporting, DLP is:",
+    "options": [
+      "CTDIvol × scan length",
+      "CTDIvol ÷ scan length",
+      "Unit of activity",
+      "Same as HVL"
+    ],
+    "answer_index": 0,
+    "difficulty": "standard",
+    "topic": "demo"
+  },
+  {
+    "id": 7,
+    "question": "Added filtration in an X-ray tube primarily:",
+    "options": [
+      "Increases patient skin dose",
+      "Removes low-energy photons",
+      "Increases scatter",
+      "Reduces kVp"
+    ],
+    "answer_index": 1,
+    "difficulty": "standard",
+    "topic": "demo"
+  },
+  {
+    "id": 8,
+    "question": "Which instrument is most appropriate to check for surface contamination?",
+    "options": [
+      "TLD badge",
+      "Film badge",
+      "GM pancake probe",
+      "Stopwatch"
+    ],
+    "answer_index": 2,
+    "difficulty": "standard",
+    "topic": "demo"
+  },
+  {
+    "id": 9,
+    "question": "For unsealed sources, a key additional hazard is:",
+    "options": [
+      "External exposure only",
+      "Contamination leading to internal exposure",
+      "Magnetic field hazard",
+      "Ultrasound heating"
+    ],
+    "answer_index": 1,
+    "difficulty": "standard",
+    "topic": "demo"
+  },
+  {
+    "id": 10,
+    "question": "Inverse square law: if distance doubles, intensity becomes:",
+    "options": [
+      "1/2",
+      "1/3",
+      "1/4",
+      "1/8"
+    ],
+    "answer_index": 2,
+    "difficulty": "standard",
+    "topic": "demo"
+  },
+  {
+    "id": 11,
+    "question": "Which statement is MOST correct regarding ALARA implementation in facilities? (Variant 11)",
+    "options": [
+      "It replaces dose limits",
+      "It focuses on reducing unnecessary exposure through practical controls",
+      "It applies only to patients",
+      "It removes need for monitoring"
+    ],
+    "answer_index": 1,
+    "difficulty": "standard",
+    "topic": "ALARA"
+  },
+  {
+    "id": 12,
+    "question": "Which statement is MOST correct regarding ALARA implementation in facilities? (Variant 12)",
+    "options": [
+      "It replaces dose limits",
+      "It focuses on reducing unnecessary exposure through practical controls",
+      "It applies only to patients",
+      "It removes need for monitoring"
+    ],
+    "answer_index": 1,
+    "difficulty": "standard",
+    "topic": "ALARA"
+  },
+  {
+    "id": 13,
+    "question": "Which statement is MOST correct regarding ALARA implementation in facilities? (Variant 13)",
+    "options": [
+      "It replaces dose limits",
+      "It focuses on reducing unnecessary exposure through practical controls",
+      "It applies only to patients",
+      "It removes need for monitoring"
+    ],
+    "answer_index": 1,
+    "difficulty": "standard",
+    "topic": "ALARA"
+  },
+  {
+    "id": 14,
+    "question": "Which statement is MOST correct regarding ALARA implementation in facilities? (Variant 14)",
+    "options": [
+      "It replaces dose limits",
+      "It focuses on reducing unnecessary exposure through practical controls",
+      "It applies only to patients",
+      "It removes need for monitoring"
+    ],
+    "answer_index": 1,
+    "difficulty": "standard",
+    "topic": "ALARA"
+  },
+  {
+    "id": 15,
+    "question": "Which statement is MOST correct regarding ALARA implementation in facilities? (Variant 15)",
+    "options": [
+      "It replaces dose limits",
+      "It focuses on reducing unnecessary exposure through practical controls",
+      "It applies only to patients",
+      "It removes need for monitoring"
+    ],
+    "answer_index": 1,
+    "difficulty": "standard",
+    "topic": "ALARA"
+  },
+  {
+    "id": 16,
+    "question": "Which statement is MOST correct regarding ALARA implementation in facilities? (Variant 16)",
+    "options": [
+      "It replaces dose limits",
+      "It focuses on reducing unnecessary exposure through practical controls",
+      "It applies only to patients",
+      "It removes need for monitoring"
+    ],
+    "answer_index": 1,
+    "difficulty": "standard",
+    "topic": "ALARA"
+  },
+  {
+    "id": 17,
+    "question": "Which statement is MOST correct regarding ALARA implementation in facilities? (Variant 17)",
+    "options": [
+      "It replaces dose limits",
+      "It focuses on reducing unnecessary exposure through practical controls",
+      "It applies only to patients",
+      "It removes need for monitoring"
+    ],
+    "answer_index": 1,
+    "difficulty": "standard",
+    "topic": "ALARA"
+  },
+  {
+    "id": 18,
+    "question": "Which statement is MOST correct regarding ALARA implementation in facilities? (Variant 18)",
+    "options": [
+      "It replaces dose limits",
+      "It focuses on reducing unnecessary exposure through practical controls",
+      "It applies only to patients",
+      "It removes need for monitoring"
+    ],
+    "answer_index": 1,
+    "difficulty": "standard",
+    "topic": "ALARA"
+  },
+  {
+    "id": 19,
+    "question": "Which statement is MOST correct regarding ALARA implementation in facilities? (Variant 19)",
+    "options": [
+      "It replaces dose limits",
+      "It focuses on reducing unnecessary exposure through practical controls",
+      "It applies only to patients",
+      "It removes need for monitoring"
+    ],
+    "answer_index": 1,
+    "difficulty": "standard",
+    "topic": "ALARA"
+  },
+  {
+    "id": 20,
+    "question": "Which statement is MOST correct regarding ALARA implementation in facilities? (Variant 20)",
+    "options": [
+      "It replaces dose limits",
+      "It focuses on reducing unnecessary exposure through practical controls",
+      "It applies only to patients",
+      "It removes need for monitoring"
+    ],
+    "answer_index": 1,
+    "difficulty": "standard",
+    "topic": "ALARA"
+  }
+]

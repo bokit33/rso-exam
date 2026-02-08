@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "updated": "2026-02-08",
+  "banks": [
+    {
+      "id": "standard_review",
+      "title": "Standard Review (150Q) — Theory + Light Calc",
+      "file": "review_standard.json",
+      "count": 150
+    },
+    {
+      "id": "demo_micro",
+      "title": "Demo Micro Bank (20Q)",
+      "file": "demo_micro.json",
+      "count": 20
+    }
+  ]
+}

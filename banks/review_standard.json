@@ -1,0 +1,2102 @@
+[
+  {
+    "id": 1,
+    "question": "Which term best matches 'time-averaged risk accounting for radiation type and tissue sensitivity'? Which is most correct?",
+    "options": [
+      "Exposure",
+      "Effective dose",
+      "Absorbed dose",
+      "Activity"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 2,
+    "question": "Which is an example of a stochastic effect? Identify the correct statement.",
+    "options": [
+      "Cataract (threshold-type)",
+      "Temporary epilation",
+      "Skin burn",
+      "Cancer risk"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 3,
+    "question": "Which is a correct pairing of quantity and unit? Pick the best response.",
+    "options": [
+      "Exposure - Sv",
+      "Effective dose - Gy",
+      "Activity - Bq",
+      "Absorbed dose - Bq"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 4,
+    "question": "Which statement about lead aprons is most accurate? Select one option.",
+    "options": [
+      "They block all radiation",
+      "They increase dose",
+      "They reduce scatter dose to radiosensitive organs but do not eliminate exposure",
+      "They replace the need for distance"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 5,
+    "question": "The SI unit of activity is: Identify the correct statement.",
+    "options": [
+      "Gray (Gy)",
+      "Sievert (Sv)",
+      "Becquerel (Bq)",
+      "Coulomb/kg"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 6,
+    "question": "For an unsealed source, a key additional hazard is: Which is most correct?",
+    "options": [
+      "Ultrasound heating",
+      "Tube housing leakage",
+      "Magnetic field hazard",
+      "Contamination leading to internal exposure"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 7,
+    "question": "Which is an example of a deterministic effect? Which is most correct?",
+    "options": [
+      "Random mutation without threshold",
+      "Hereditary effects",
+      "Skin erythema after high local dose",
+      "Cancer induction"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 8,
+    "question": "Which change most reduces scatter to staff during fluoroscopy? Pick the best response.",
+    "options": [
+      "Increase fluoroscopy time",
+      "Increase field size",
+      "Use tight collimation and keep hands out of the beam",
+      "Stand closer to the patient"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 9,
+    "question": "Transport Index (TI) is based on: Select one option.",
+    "options": [
+      "Activity only",
+      "Dose rate at 1 meter from the package (per common transport rules)",
+      "Half-life only",
+      "Package mass"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 10,
+    "question": "The SI unit of absorbed dose is: Select one option.",
+    "options": [
+      "Becquerel (Bq)",
+      "Gray (Gy)",
+      "Curie (Ci)",
+      "Sievert (Sv)"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 11,
+    "question": "Before releasing a room or equipment after unsealed use, you should: Choose the best answer.",
+    "options": [
+      "Turn off lights only",
+      "Assume it is clean",
+      "Remove warning signs without checking",
+      "Perform contamination survey and document results"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 12,
+    "question": "A supervised area is best described as: Identify the correct statement.",
+    "options": [
+      "An area requiring review and monitoring but not full access control",
+      "An emergency exit only",
+      "A radioactive waste drum",
+      "An area with no radiation"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 13,
+    "question": "Which term best matches 'time-averaged risk accounting for radiation type and tissue sensitivity'? Choose the best answer.",
+    "options": [
+      "Effective dose",
+      "Activity",
+      "Exposure",
+      "Absorbed dose"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 14,
+    "question": "What does a tissue weighting factor reflect? Which is most correct?",
+    "options": [
+      "Shield thickness",
+      "Detector sensitivity",
+      "Relative contribution of an organ/tissue to overall stochastic risk",
+      "Tube filtration"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 15,
+    "question": "Which instrument is most appropriate to check for surface contamination? Which is most correct?",
+    "options": [
+      "Thermometer",
+      "TLD badge",
+      "Film dosimeter",
+      "Contamination monitor (e.g., GM pancake probe)"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 16,
+    "question": "Which is a typical program element of a radiation protection program? Pick the best response.",
+    "options": [
+      "Training, monitoring, and written procedures",
+      "No record keeping",
+      "Ignoring alarms to avoid delays",
+      "Only patient counseling"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 17,
+    "question": "Which change most reduces scatter to staff during fluoroscopy? Identify the correct statement.",
+    "options": [
+      "Increase field size",
+      "Increase fluoroscopy time",
+      "Stand closer to the patient",
+      "Use tight collimation and keep hands out of the beam"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 18,
+    "question": "The primary purpose of collimation is to: Which is most correct?",
+    "options": [
+      "Increase scan length",
+      "Increase beam intensity",
+      "Limit the beam to the area of interest to reduce patient dose and scatter",
+      "Increase tube leakage"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 19,
+    "question": "DLP is best described as: Which is most correct?",
+    "options": [
+      "CTDIvol divided by scan length",
+      "A measure of contamination",
+      "A unit of activity",
+      "CTDIvol multiplied by scan length"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 20,
+    "question": "Before releasing a room or equipment after unsealed use, you should: Which is most correct?",
+    "options": [
+      "Perform contamination survey and document results",
+      "Assume it is clean",
+      "Turn off lights only",
+      "Remove warning signs without checking"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 21,
+    "question": "A controlled area is best described as: Which is most correct?",
+    "options": [
+      "An area with access controls due to potential occupational exposure",
+      "Any public hallway",
+      "A cafeteria",
+      "A parking lot"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 22,
+    "question": "Which is an example of a stochastic effect? Which is most correct?",
+    "options": [
+      "Temporary epilation",
+      "Cataract (threshold-type)",
+      "Skin burn",
+      "Cancer risk"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 23,
+    "question": "Which is an example of a stochastic effect? Select one option.",
+    "options": [
+      "Temporary epilation",
+      "Skin burn",
+      "Cataract (threshold-type)",
+      "Cancer risk"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 24,
+    "question": "Transport Index (TI) is based on: Which is most correct?",
+    "options": [
+      "Dose rate at 1 meter from the package (per common transport rules)",
+      "Package mass",
+      "Activity only",
+      "Half-life only"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 25,
+    "question": "What does a radiation weighting factor reflect? Identify the correct statement.",
+    "options": [
+      "Distance from source",
+      "Scan length",
+      "Patient age",
+      "Relative biological effectiveness of radiation type"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 26,
+    "question": "The primary purpose of collimation is to: Identify the correct statement.",
+    "options": [
+      "Increase tube leakage",
+      "Increase scan length",
+      "Increase beam intensity",
+      "Limit the beam to the area of interest to reduce patient dose and scatter"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 27,
+    "question": "For an unsealed source, a key additional hazard is: Choose the best answer.",
+    "options": [
+      "Tube housing leakage",
+      "Ultrasound heating",
+      "Contamination leading to internal exposure",
+      "Magnetic field hazard"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 28,
+    "question": "In CT dose reporting, CTDIvol is best described as: Select one option.",
+    "options": [
+      "A measure of activity",
+      "A standardized index of scanner output related to dose in a reference phantom",
+      "A direct measurement of effective dose",
+      "The half-value layer"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 29,
+    "question": "Which control most effectively reduces exposure in a high dose-rate area? Choose the best answer.",
+    "options": [
+      "Increase distance from the source",
+      "Increase time near the source",
+      "Remove shielding",
+      "Increase field size"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 30,
+    "question": "DLP is best described as: Select one option.",
+    "options": [
+      "CTDIvol multiplied by scan length",
+      "CTDIvol divided by scan length",
+      "A measure of contamination",
+      "A unit of activity"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 31,
+    "question": "For an unsealed source, a key additional hazard is: Pick the best response.",
+    "options": [
+      "Ultrasound heating",
+      "Magnetic field hazard",
+      "Contamination leading to internal exposure",
+      "Tube housing leakage"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 32,
+    "question": "Which control most effectively reduces exposure in a high dose-rate area? Identify the correct statement.",
+    "options": [
+      "Increase field size",
+      "Increase distance from the source",
+      "Remove shielding",
+      "Increase time near the source"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 33,
+    "question": "Which statement best describes ALARA? Identify the correct statement.",
+    "options": [
+      "Eliminate all radiation exposure",
+      "Keep exposures as low as reasonably achievable considering practical factors",
+      "Keep exposures below public limits only",
+      "Increase dose to improve image quality"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 34,
+    "question": "Which instrument is most appropriate for exposure rate surveys? Which is most correct?",
+    "options": [
+      "Microbalance",
+      "Stopwatch",
+      "Ion chamber survey meter",
+      "pH meter"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 35,
+    "question": "The SI unit of equivalent/effective dose is: Which is most correct?",
+    "options": [
+      "Roentgen (R)",
+      "Becquerel (Bq)",
+      "Gray (Gy)",
+      "Sievert (Sv)"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 36,
+    "question": "Which practice reduces patient skin dose in fluoroscopy? Identify the correct statement.",
+    "options": [
+      "Increase magnification mode routinely",
+      "Increase field size",
+      "Use pulsed fluoro and minimize beam-on time",
+      "Remove filtration"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 37,
+    "question": "The SI unit of absorbed dose is: Identify the correct statement.",
+    "options": [
+      "Sievert (Sv)",
+      "Gray (Gy)",
+      "Curie (Ci)",
+      "Becquerel (Bq)"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 38,
+    "question": "Which waste approach is appropriate for short-lived radionuclides? Which is most correct?",
+    "options": [
+      "Release without survey",
+      "Mix with general waste immediately",
+      "Permanent storage without tracking",
+      "Decay-in-storage when allowed by policy"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 39,
+    "question": "Which practice reduces patient skin dose in fluoroscopy? Select one option.",
+    "options": [
+      "Increase field size",
+      "Increase magnification mode routinely",
+      "Remove filtration",
+      "Use pulsed fluoro and minimize beam-on time"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 40,
+    "question": "In fluoroscopy, operator dose is generally lower on the: Pick the best response.",
+    "options": [
+      "Image receptor side",
+      "Door side only",
+      "X-ray tube side",
+      "Ceiling side only"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 41,
+    "question": "The SI unit of activity is: Select one option.",
+    "options": [
+      "Sievert (Sv)",
+      "Coulomb/kg",
+      "Becquerel (Bq)",
+      "Gray (Gy)"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 42,
+    "question": "Which is a typical program element of a radiation protection program? Which is most correct?",
+    "options": [
+      "No record keeping",
+      "Ignoring alarms to avoid delays",
+      "Only patient counseling",
+      "Training, monitoring, and written procedures"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 43,
+    "question": "Which control most effectively reduces exposure in a high dose-rate area? Which is most correct?",
+    "options": [
+      "Increase field size",
+      "Increase time near the source",
+      "Remove shielding",
+      "Increase distance from the source"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 44,
+    "question": "Which document typically sets facility radiation protection rules and responsibilities? Pick the best response.",
+    "options": [
+      "Sports schedule",
+      "Restaurant menu",
+      "Weather report",
+      "Radiation protection program/procedures"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 45,
+    "question": "A supervised area is best described as: Select one option.",
+    "options": [
+      "An emergency exit only",
+      "A radioactive waste drum",
+      "An area requiring review and monitoring but not full access control",
+      "An area with no radiation"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 46,
+    "question": "For an unsealed source, a key additional hazard is: Identify the correct statement.",
+    "options": [
+      "Contamination leading to internal exposure",
+      "Ultrasound heating",
+      "Magnetic field hazard",
+      "Tube housing leakage"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 47,
+    "question": "What does a tissue weighting factor reflect? Select one option.",
+    "options": [
+      "Tube filtration",
+      "Shield thickness",
+      "Detector sensitivity",
+      "Relative contribution of an organ/tissue to overall stochastic risk"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 48,
+    "question": "Which practice reduces patient skin dose in fluoroscopy? Choose the best answer.",
+    "options": [
+      "Remove filtration",
+      "Increase magnification mode routinely",
+      "Use pulsed fluoro and minimize beam-on time",
+      "Increase field size"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 49,
+    "question": "Which statement about lead aprons is most accurate? Pick the best response.",
+    "options": [
+      "They replace the need for distance",
+      "They reduce scatter dose to radiosensitive organs but do not eliminate exposure",
+      "They block all radiation",
+      "They increase dose"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 50,
+    "question": "For an unsealed source, a key additional hazard is: Select one option.",
+    "options": [
+      "Magnetic field hazard",
+      "Tube housing leakage",
+      "Ultrasound heating",
+      "Contamination leading to internal exposure"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 51,
+    "question": "For a sealed source, the dominant hazard is usually: Choose the best answer.",
+    "options": [
+      "Inhalation",
+      "Ingestion",
+      "External exposure",
+      "Skin contamination"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 52,
+    "question": "A supervised area is best described as: Pick the best response.",
+    "options": [
+      "A radioactive waste drum",
+      "An emergency exit only",
+      "An area with no radiation",
+      "An area requiring review and monitoring but not full access control"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 53,
+    "question": "Which action helps reduce repeat imaging? Pick the best response.",
+    "options": [
+      "Increase repeats by default",
+      "Proper positioning and technique selection",
+      "Widen collimation",
+      "Remove filtration"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 54,
+    "question": "In fluoroscopy, operator dose is generally lower on the: Identify the correct statement.",
+    "options": [
+      "X-ray tube side",
+      "Image receptor side",
+      "Door side only",
+      "Ceiling side only"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 55,
+    "question": "The primary purpose of collimation is to: Choose the best answer.",
+    "options": [
+      "Increase scan length",
+      "Increase tube leakage",
+      "Limit the beam to the area of interest to reduce patient dose and scatter",
+      "Increase beam intensity"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 56,
+    "question": "Which control most effectively reduces exposure in a high dose-rate area? Pick the best response.",
+    "options": [
+      "Increase field size",
+      "Remove shielding",
+      "Increase distance from the source",
+      "Increase time near the source"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 57,
+    "question": "For a sealed source, the dominant hazard is usually: Pick the best response.",
+    "options": [
+      "Skin contamination",
+      "Inhalation",
+      "Ingestion",
+      "External exposure"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 58,
+    "question": "Which instrument is most appropriate for exposure rate surveys? Select one option.",
+    "options": [
+      "Microbalance",
+      "pH meter",
+      "Ion chamber survey meter",
+      "Stopwatch"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 59,
+    "question": "What does a tissue weighting factor reflect? Choose the best answer.",
+    "options": [
+      "Relative contribution of an organ/tissue to overall stochastic risk",
+      "Shield thickness",
+      "Tube filtration",
+      "Detector sensitivity"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 60,
+    "question": "Which is a correct pairing of quantity and unit? Identify the correct statement.",
+    "options": [
+      "Exposure - Sv",
+      "Activity - Bq",
+      "Effective dose - Gy",
+      "Absorbed dose - Bq"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 61,
+    "question": "A supervised area is best described as: Choose the best answer.",
+    "options": [
+      "An area with no radiation",
+      "An emergency exit only",
+      "A radioactive waste drum",
+      "An area requiring review and monitoring but not full access control"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 62,
+    "question": "Which control most effectively reduces exposure in a high dose-rate area? Select one option.",
+    "options": [
+      "Increase time near the source",
+      "Increase distance from the source",
+      "Remove shielding",
+      "Increase field size"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 63,
+    "question": "The SI unit of absorbed dose is: Which is most correct?",
+    "options": [
+      "Sievert (Sv)",
+      "Becquerel (Bq)",
+      "Curie (Ci)",
+      "Gray (Gy)"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 64,
+    "question": "Which change most reduces scatter to staff during fluoroscopy? Choose the best answer.",
+    "options": [
+      "Increase field size",
+      "Increase fluoroscopy time",
+      "Stand closer to the patient",
+      "Use tight collimation and keep hands out of the beam"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 65,
+    "question": "Before releasing a room or equipment after unsealed use, you should: Identify the correct statement.",
+    "options": [
+      "Remove warning signs without checking",
+      "Turn off lights only",
+      "Assume it is clean",
+      "Perform contamination survey and document results"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 66,
+    "question": "Which term best matches 'time-averaged risk accounting for radiation type and tissue sensitivity'? Identify the correct statement.",
+    "options": [
+      "Effective dose",
+      "Absorbed dose",
+      "Exposure",
+      "Activity"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 67,
+    "question": "In fluoroscopy, operator dose is generally lower on the: Choose the best answer.",
+    "options": [
+      "X-ray tube side",
+      "Image receptor side",
+      "Door side only",
+      "Ceiling side only"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 68,
+    "question": "Which is a typical program element of a radiation protection program? Identify the correct statement.",
+    "options": [
+      "Ignoring alarms to avoid delays",
+      "Training, monitoring, and written procedures",
+      "Only patient counseling",
+      "No record keeping"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 69,
+    "question": "In CT dose reporting, CTDIvol is best described as: Choose the best answer.",
+    "options": [
+      "A measure of activity",
+      "A standardized index of scanner output related to dose in a reference phantom",
+      "A direct measurement of effective dose",
+      "The half-value layer"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 70,
+    "question": "Which instrument is most appropriate to check for surface contamination? Select one option.",
+    "options": [
+      "TLD badge",
+      "Film dosimeter",
+      "Contamination monitor (e.g., GM pancake probe)",
+      "Thermometer"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 71,
+    "question": "Which statement about pregnancy and occupational exposure is most appropriate? Which is most correct?",
+    "options": [
+      "Ignore monitoring because doses are low",
+      "Stop all work immediately for any exposure",
+      "Double the occupational limit",
+      "Apply additional controls to keep fetal dose low and follow local policy"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 72,
+    "question": "The primary purpose of collimation is to: Select one option.",
+    "options": [
+      "Increase tube leakage",
+      "Increase scan length",
+      "Limit the beam to the area of interest to reduce patient dose and scatter",
+      "Increase beam intensity"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 73,
+    "question": "Which is a typical program element of a radiation protection program? Select one option.",
+    "options": [
+      "Training, monitoring, and written procedures",
+      "No record keeping",
+      "Ignoring alarms to avoid delays",
+      "Only patient counseling"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 74,
+    "question": "What does a tissue weighting factor reflect? Identify the correct statement.",
+    "options": [
+      "Detector sensitivity",
+      "Tube filtration",
+      "Shield thickness",
+      "Relative contribution of an organ/tissue to overall stochastic risk"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 75,
+    "question": "Which statement about lead aprons is most accurate? Which is most correct?",
+    "options": [
+      "They replace the need for distance",
+      "They increase dose",
+      "They block all radiation",
+      "They reduce scatter dose to radiosensitive organs but do not eliminate exposure"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 76,
+    "question": "Which instrument is most appropriate for exposure rate surveys? Pick the best response.",
+    "options": [
+      "Ion chamber survey meter",
+      "pH meter",
+      "Stopwatch",
+      "Microbalance"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 77,
+    "question": "In CT dose reporting, CTDIvol is best described as: Identify the correct statement.",
+    "options": [
+      "A standardized index of scanner output related to dose in a reference phantom",
+      "The half-value layer",
+      "A measure of activity",
+      "A direct measurement of effective dose"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 78,
+    "question": "The primary purpose of added filtration is to: Select one option.",
+    "options": [
+      "Increase scatter",
+      "Increase patient entrance dose",
+      "Remove low-energy photons that increase skin dose",
+      "Reduce HVL"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 79,
+    "question": "Which statement best describes ALARA? Pick the best response.",
+    "options": [
+      "Keep exposures below public limits only",
+      "Increase dose to improve image quality",
+      "Eliminate all radiation exposure",
+      "Keep exposures as low as reasonably achievable considering practical factors"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 80,
+    "question": "The SI unit of equivalent/effective dose is: Select one option.",
+    "options": [
+      "Becquerel (Bq)",
+      "Gray (Gy)",
+      "Sievert (Sv)",
+      "Roentgen (R)"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 81,
+    "question": "Before releasing a room or equipment after unsealed use, you should: Select one option.",
+    "options": [
+      "Remove warning signs without checking",
+      "Perform contamination survey and document results",
+      "Turn off lights only",
+      "Assume it is clean"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 82,
+    "question": "Which is an example of a deterministic effect? Select one option.",
+    "options": [
+      "Random mutation without threshold",
+      "Hereditary effects",
+      "Skin erythema after high local dose",
+      "Cancer induction"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 83,
+    "question": "Which statement about pregnancy and occupational exposure is most appropriate? Pick the best response.",
+    "options": [
+      "Stop all work immediately for any exposure",
+      "Apply additional controls to keep fetal dose low and follow local policy",
+      "Double the occupational limit",
+      "Ignore monitoring because doses are low"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 84,
+    "question": "Which is the main source of staff exposure during fluoroscopy? Pick the best response.",
+    "options": [
+      "Primary beam",
+      "Background radiation",
+      "Room lights",
+      "Scatter radiation from the patient"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 85,
+    "question": "Which waste approach is appropriate for short-lived radionuclides? Pick the best response.",
+    "options": [
+      "Decay-in-storage when allowed by policy",
+      "Permanent storage without tracking",
+      "Release without survey",
+      "Mix with general waste immediately"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 86,
+    "question": "Which document typically sets facility radiation protection rules and responsibilities? Which is most correct?",
+    "options": [
+      "Radiation protection program/procedures",
+      "Weather report",
+      "Sports schedule",
+      "Restaurant menu"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 87,
+    "question": "Which is an example of a deterministic effect? Identify the correct statement.",
+    "options": [
+      "Random mutation without threshold",
+      "Hereditary effects",
+      "Skin erythema after high local dose",
+      "Cancer induction"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 88,
+    "question": "Which document typically sets facility radiation protection rules and responsibilities? Choose the best answer.",
+    "options": [
+      "Sports schedule",
+      "Radiation protection program/procedures",
+      "Restaurant menu",
+      "Weather report"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 89,
+    "question": "Which is an example of a deterministic effect? Pick the best response.",
+    "options": [
+      "Random mutation without threshold",
+      "Cancer induction",
+      "Hereditary effects",
+      "Skin erythema after high local dose"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 90,
+    "question": "Which statement about pregnancy and occupational exposure is most appropriate? Choose the best answer.",
+    "options": [
+      "Ignore monitoring because doses are low",
+      "Double the occupational limit",
+      "Stop all work immediately for any exposure",
+      "Apply additional controls to keep fetal dose low and follow local policy"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 91,
+    "question": "An X-ray beam passes through 3 HVLs. What fraction of the original intensity remains?",
+    "options": [
+      "0.0625",
+      "0.25",
+      "0.125",
+      "0.875"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 92,
+    "question": "A radionuclide has a half-life of 6 h. Initial activity is 120 MBq. What is the activity after 18 h?",
+    "options": [
+      "7.5 MBq",
+      "7.5 MBq (alt)",
+      "30 MBq",
+      "15 MBq"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 93,
+    "question": "A radionuclide has a half-life of 4 h. Initial activity is 200 MBq. What is the activity after 4 h?",
+    "options": [
+      "50 MBq",
+      "200 MBq",
+      "100 MBq",
+      "50 MBq (alt)"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 94,
+    "question": "A radionuclide has a half-life of 12 h. Initial activity is 120 MBq. What is the activity after 24 h?",
+    "options": [
+      "15 MBq",
+      "60 MBq",
+      "15 MBq (alt)",
+      "30 MBq"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 95,
+    "question": "Convert 0.5 mSv to microsievert (uSv).",
+    "options": [
+      "0.0005 uSv",
+      "500 uSv",
+      "50 uSv",
+      "5000 uSv"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 96,
+    "question": "A radionuclide has a half-life of 2 h. What is its decay constant (lambda) in h^-1?",
+    "options": [
+      "1.3863 h^-1",
+      "0.3466 h^-1",
+      "0.5000 h^-1",
+      "1.1513 h^-1"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 97,
+    "question": "An unshielded point source produces 3.5 mSv/h at 1 m. Using inverse square law, what is the dose rate at 3 m?",
+    "options": [
+      "0.389 mSv/h",
+      "31.5 mSv/h",
+      "1.17 mSv/h",
+      "10.5 mSv/h"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 98,
+    "question": "A CT exam has CTDIvol = 18 mGy and scan length = 15 cm. What is the DLP?",
+    "options": [
+      "33 mGy*cm",
+      "27 mGy*cm",
+      "1.2 mGy*cm",
+      "270 mGy*cm"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 99,
+    "question": "An unshielded point source produces 0.5 mSv/h at 1 m. Using inverse square law, what is the dose rate at 2 m?",
+    "options": [
+      "0.125 mSv/h",
+      "1 mSv/h",
+      "2 mSv/h",
+      "0.25 mSv/h"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 100,
+    "question": "An unshielded point source produces 2.0 mSv/h at 1 m. Using inverse square law, what is the dose rate at 5 m?",
+    "options": [
+      "0.4 mSv/h",
+      "10 mSv/h",
+      "50 mSv/h",
+      "0.08 mSv/h"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 101,
+    "question": "A CT exam has CTDIvol = 15 mGy and scan length = 20 cm. What is the DLP?",
+    "options": [
+      "0.75 mGy*cm",
+      "30 mGy*cm",
+      "35 mGy*cm",
+      "300 mGy*cm"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 102,
+    "question": "A CT exam has CTDIvol = 10 mGy and scan length = 15 cm. What is the DLP?",
+    "options": [
+      "150 mGy*cm",
+      "0.667 mGy*cm",
+      "25 mGy*cm",
+      "15 mGy*cm"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 103,
+    "question": "An unshielded point source produces 2.0 mSv/h at 1 m. Using inverse square law, what is the dose rate at 4 m?",
+    "options": [
+      "0.5 mSv/h",
+      "8 mSv/h",
+      "32 mSv/h",
+      "0.125 mSv/h"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 104,
+    "question": "A fluoroscopy procedure uses a reference air kerma rate of 18 mGy/min for 4 minutes. Approximate accumulated kerma (ignore geometry factors).",
+    "options": [
+      "4.5 mGy",
+      "36 mGy",
+      "22 mGy",
+      "72 mGy"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 105,
+    "question": "A radionuclide has a half-life of 6 h. What is its decay constant (lambda) in h^-1?",
+    "options": [
+      "0.1667 h^-1",
+      "4.1589 h^-1",
+      "0.3838 h^-1",
+      "0.1155 h^-1"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 106,
+    "question": "Convert 780 Bq to kBq.",
+    "options": [
+      "0.078 kBq",
+      "0.78 kBq",
+      "780000 kBq",
+      "7.8 kBq"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 107,
+    "question": "An X-ray beam passes through 1 HVLs. What fraction of the original intensity remains?",
+    "options": [
+      "0.25",
+      "1",
+      "0.25 (alt)",
+      "0.5"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 108,
+    "question": "A radionuclide has a half-life of 4 h. Initial activity is 80 MBq. What is the activity after 12 h?",
+    "options": [
+      "5 MBq (alt)",
+      "20 MBq",
+      "10 MBq",
+      "5 MBq"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 109,
+    "question": "A radionuclide has a half-life of 8 h. What is its decay constant (lambda) in h^-1?",
+    "options": [
+      "0.1250 h^-1",
+      "0.2878 h^-1",
+      "5.5452 h^-1",
+      "0.0866 h^-1"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 110,
+    "question": "A radionuclide has a half-life of 24 h. What is its decay constant (lambda) in h^-1?",
+    "options": [
+      "0.0289 h^-1",
+      "0.0959 h^-1",
+      "0.0417 h^-1",
+      "16.6355 h^-1"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 111,
+    "question": "A CT exam has CTDIvol = 10 mGy and scan length = 25 cm. What is the DLP?",
+    "options": [
+      "250 mGy*cm",
+      "25 mGy*cm",
+      "35 mGy*cm",
+      "0.4 mGy*cm"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 112,
+    "question": "An unshielded point source produces 1.2 mSv/h at 1 m. Using inverse square law, what is the dose rate at 2 m?",
+    "options": [
+      "0.3 mSv/h",
+      "2.4 mSv/h",
+      "0.6 mSv/h",
+      "4.8 mSv/h"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 113,
+    "question": "An unshielded point source produces 0.8 mSv/h at 1 m. Using inverse square law, what is the dose rate at 2 m?",
+    "options": [
+      "0.2 mSv/h",
+      "1.6 mSv/h",
+      "0.4 mSv/h",
+      "3.2 mSv/h"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 114,
+    "question": "Convert 0.02 Gy to mGy.",
+    "options": [
+      "2e-05 mGy",
+      "200 mGy",
+      "20 mGy",
+      "2 mGy"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 115,
+    "question": "Convert 32000 Bq to kBq.",
+    "options": [
+      "320 kBq",
+      "3.2 kBq",
+      "32 kBq",
+      "32000000 kBq"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 116,
+    "question": "A radionuclide has a half-life of 12 h. What is its decay constant (lambda) in h^-1?",
+    "options": [
+      "8.3178 h^-1",
+      "0.0833 h^-1",
+      "0.0578 h^-1",
+      "0.1919 h^-1"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 117,
+    "question": "A CT exam has CTDIvol = 8 mGy and scan length = 12 cm. What is the DLP?",
+    "options": [
+      "0.667 mGy*cm",
+      "96 mGy*cm",
+      "20 mGy*cm",
+      "9.6 mGy*cm"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 118,
+    "question": "A CT exam has CTDIvol = 12 mGy and scan length = 25 cm. What is the DLP?",
+    "options": [
+      "37 mGy*cm",
+      "30 mGy*cm",
+      "0.48 mGy*cm",
+      "300 mGy*cm"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 119,
+    "question": "An X-ray beam passes through 4 HVLs. What fraction of the original intensity remains?",
+    "options": [
+      "0.0625",
+      "0.0312",
+      "0.125",
+      "0.938"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 120,
+    "question": "A radionuclide has a half-life of 6 h. Initial activity is 500 MBq. What is the activity after 18 h?",
+    "options": [
+      "62.5 MBq",
+      "31.2 MBq",
+      "31.2 MBq (alt)",
+      "125 MBq"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 121,
+    "question": "A fluoroscopy procedure uses a reference air kerma rate of 15 mGy/min for 3 minutes. Approximate accumulated kerma (ignore geometry factors).",
+    "options": [
+      "22.5 mGy",
+      "45 mGy",
+      "5 mGy",
+      "18 mGy"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 122,
+    "question": "An unshielded point source produces 0.8 mSv/h at 1 m. Using inverse square law, what is the dose rate at 5 m?",
+    "options": [
+      "0.032 mSv/h",
+      "20 mSv/h",
+      "4 mSv/h",
+      "0.16 mSv/h"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 123,
+    "question": "Convert 0.25 Gy to mGy.",
+    "options": [
+      "2500 mGy",
+      "250 mGy",
+      "25 mGy",
+      "0.00025 mGy"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 124,
+    "question": "A radionuclide has a half-life of 4 h. Initial activity is 200 MBq. What is the activity after 12 h?",
+    "options": [
+      "12.5 MBq",
+      "12.5 MBq (alt)",
+      "25 MBq",
+      "50 MBq"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 125,
+    "question": "A radionuclide has a half-life of 2 h. Initial activity is 200 MBq. What is the activity after 8 h?",
+    "options": [
+      "25 MBq",
+      "6.25 MBq (alt)",
+      "12.5 MBq",
+      "6.25 MBq"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 126,
+    "question": "An unshielded point source produces 1.2 mSv/h at 1 m. Using inverse square law, what is the dose rate at 3 m?",
+    "options": [
+      "0.133 mSv/h",
+      "10.8 mSv/h",
+      "0.4 mSv/h",
+      "3.6 mSv/h"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 127,
+    "question": "An unshielded point source produces 0.5 mSv/h at 1 m. Using inverse square law, what is the dose rate at 5 m?",
+    "options": [
+      "12.5 mSv/h",
+      "0.02 mSv/h",
+      "0.1 mSv/h",
+      "2.5 mSv/h"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 128,
+    "question": "An unshielded point source produces 0.8 mSv/h at 1 m. Using inverse square law, what is the dose rate at 3 m?",
+    "options": [
+      "2.4 mSv/h",
+      "0.267 mSv/h",
+      "7.2 mSv/h",
+      "0.0889 mSv/h"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 129,
+    "question": "An unshielded point source produces 0.5 mSv/h at 1 m. Using inverse square law, what is the dose rate at 4 m?",
+    "options": [
+      "0.0312 mSv/h",
+      "8 mSv/h",
+      "2 mSv/h",
+      "0.125 mSv/h"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 130,
+    "question": "An unshielded point source produces 5.0 mSv/h at 1 m. Using inverse square law, what is the dose rate at 4 m?",
+    "options": [
+      "0.312 mSv/h",
+      "80 mSv/h",
+      "1.25 mSv/h",
+      "20 mSv/h"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 131,
+    "question": "An unshielded point source produces 3.5 mSv/h at 1 m. Using inverse square law, what is the dose rate at 5 m?",
+    "options": [
+      "87.5 mSv/h",
+      "17.5 mSv/h",
+      "0.14 mSv/h",
+      "0.7 mSv/h"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 132,
+    "question": "An unshielded point source produces 0.8 mSv/h at 1 m. Using inverse square law, what is the dose rate at 4 m?",
+    "options": [
+      "12.8 mSv/h",
+      "3.2 mSv/h",
+      "0.05 mSv/h",
+      "0.2 mSv/h"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 133,
+    "question": "An unshielded point source produces 1.2 mSv/h at 1 m. Using inverse square law, what is the dose rate at 5 m?",
+    "options": [
+      "0.048 mSv/h",
+      "6 mSv/h",
+      "0.24 mSv/h",
+      "30 mSv/h"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 134,
+    "question": "An unshielded point source produces 5.0 mSv/h at 1 m. Using inverse square law, what is the dose rate at 5 m?",
+    "options": [
+      "0.2 mSv/h",
+      "125 mSv/h",
+      "25 mSv/h",
+      "1 mSv/h"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 135,
+    "question": "An unshielded point source produces 2.0 mSv/h at 1 m. Using inverse square law, what is the dose rate at 2 m?",
+    "options": [
+      "1 mSv/h",
+      "8 mSv/h",
+      "0.5 mSv/h",
+      "4 mSv/h"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 136,
+    "question": "A fluoroscopy procedure uses a reference air kerma rate of 8 mGy/min for 5 minutes. Approximate accumulated kerma (ignore geometry factors).",
+    "options": [
+      "40 mGy",
+      "20 mGy",
+      "13 mGy",
+      "1.6 mGy"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 137,
+    "question": "An unshielded point source produces 5.0 mSv/h at 1 m. Using inverse square law, what is the dose rate at 2 m?",
+    "options": [
+      "2.5 mSv/h",
+      "20 mSv/h",
+      "10 mSv/h",
+      "1.25 mSv/h"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 138,
+    "question": "A radionuclide has a half-life of 6 h. Initial activity is 200 MBq. What is the activity after 24 h?",
+    "options": [
+      "25 MBq",
+      "6.25 MBq (alt)",
+      "6.25 MBq",
+      "12.5 MBq"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 139,
+    "question": "A radionuclide has a half-life of 4 h. What is its decay constant (lambda) in h^-1?",
+    "options": [
+      "0.5756 h^-1",
+      "0.1733 h^-1",
+      "2.7726 h^-1",
+      "0.2500 h^-1"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 140,
+    "question": "A CT exam has CTDIvol = 8 mGy and scan length = 25 cm. What is the DLP?",
+    "options": [
+      "20 mGy*cm",
+      "33 mGy*cm",
+      "200 mGy*cm",
+      "0.32 mGy*cm"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 141,
+    "question": "A CT exam has CTDIvol = 18 mGy and scan length = 12 cm. What is the DLP?",
+    "options": [
+      "216 mGy*cm",
+      "21.6 mGy*cm",
+      "30 mGy*cm",
+      "1.5 mGy*cm"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 142,
+    "question": "A fluoroscopy procedure uses a reference air kerma rate of 12 mGy/min for 5 minutes. Approximate accumulated kerma (ignore geometry factors).",
+    "options": [
+      "60 mGy",
+      "17 mGy",
+      "30 mGy",
+      "2.4 mGy"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 143,
+    "question": "An X-ray beam passes through 2 HVLs. What fraction of the original intensity remains?",
+    "options": [
+      "0.5",
+      "0.25",
+      "0.75",
+      "0.125"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 144,
+    "question": "A radionuclide has a half-life of 4 h. Initial activity is 80 MBq. What is the activity after 4 h?",
+    "options": [
+      "20 MBq (alt)",
+      "40 MBq",
+      "20 MBq",
+      "80 MBq"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 145,
+    "question": "Convert 1200 Bq to kBq.",
+    "options": [
+      "0.12 kBq",
+      "1200000 kBq",
+      "12 kBq",
+      "1.2 kBq"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 146,
+    "question": "Convert 1.2 mSv to microsievert (uSv).",
+    "options": [
+      "1200 uSv",
+      "0.0012 uSv",
+      "120 uSv",
+      "12000 uSv"
+    ],
+    "answer_index": 0,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 147,
+    "question": "Convert 0.5 Gy to mGy.",
+    "options": [
+      "50 mGy",
+      "0.0005 mGy",
+      "500 mGy",
+      "5000 mGy"
+    ],
+    "answer_index": 2,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 148,
+    "question": "An unshielded point source produces 2.0 mSv/h at 1 m. Using inverse square law, what is the dose rate at 3 m?",
+    "options": [
+      "0.667 mSv/h",
+      "6 mSv/h",
+      "18 mSv/h",
+      "0.222 mSv/h"
+    ],
+    "answer_index": 3,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 149,
+    "question": "A CT exam has CTDIvol = 15 mGy and scan length = 12 cm. What is the DLP?",
+    "options": [
+      "27 mGy*cm",
+      "180 mGy*cm",
+      "18 mGy*cm",
+      "1.25 mGy*cm"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  },
+  {
+    "id": 150,
+    "question": "A fluoroscopy procedure uses a reference air kerma rate of 15 mGy/min for 8 minutes. Approximate accumulated kerma (ignore geometry factors).",
+    "options": [
+      "1.88 mGy",
+      "120 mGy",
+      "60 mGy",
+      "23 mGy"
+    ],
+    "answer_index": 1,
+    "explain": "",
+    "difficulty": "standard",
+    "topic": ""
+  }
+]
