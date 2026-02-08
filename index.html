@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RSO Exam Simulator</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <div class="brand">
+        <div class="badge">RSO</div>
+        <div>
+          <div class="h1">RSO Exam Simulator</div>
+          <div class="sub">Pearson‑style flow • no repetition • local attempt history</div>
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn" id="clearStorageBtn" title="Clear attempts and seen-question history">Reset</button>
+      </div>
+    </div>
+
+    <!-- START VIEW -->
+    <div id="view-start" class="exam-shell">
+      <div class="grid cols-2">
+        <div class="panel">
+          <h2>Start delivery</h2>
+          <p>This simulator is designed to feel like a real testing session: timed exam, navigation, flagging, and full review report.</p>
+          <div class="sep"></div>
+
+          <label>Mode</label>
+          <select id="mode">
+            <option value="exam">Exam (review after submit)</option>
+            <option value="practice">Practice (you can still review after submit)</option>
+          </select>
+
+          <div class="row" style="margin-top:12px">
+            <div style="flex:1">
+              <label>Questions</label>
+              <input id="count" type="number" min="5" max="200" value="75" />
+              <small>Tip: 75 mimics your current app. Use 100 for a full mock.</small>
+            </div>
+            <div style="flex:1">
+              <label>Timer (minutes)</label>
+              <input id="timer" type="number" min="5" max="240" value="90" />
+              <small>Set 0? (Not supported) — minimum is 5.</small>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top:10px">
+            <label style="display:flex; gap:10px; align-items:center; margin:0">
+              <input id="shuffleOptions" type="checkbox" checked />
+              Shuffle options
+            </label>
+            <label style="display:flex; gap:10px; align-items:center; margin:0">
+              <input id="avoidAcross" type="checkbox" checked />
+              Avoid repeats across attempts (local)
+            </label>
+          </div>
+
+          <div class="sep"></div>
+          <button class="btn primary" id="startBtn">Start Exam</button>
+          <p class="footer-note">Shortcuts during exam: <span class="kbd">1-4</span> choose • <span class="kbd">←</span>/<span class="kbd">→</span> navigate • <span class="kbd">F</span> flag</p>
+        </div>
+
+        <div class="panel">
+          <h2>Select question banks</h2>
+          <p>Pick one or multiple banks. Questions are de-duplicated (by stable id or normalized text) before selection.</p>
+          <div class="sep"></div>
+          <div id="banks-list" class="grid" style="grid-template-columns:1fr"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXAM VIEW -->
+    <div id="view-exam" class="exam-shell hidden">
+      <div class="panel">
+        <div class="q-header">
+          <div class="pill"><b id="qNum">Q1</b> <span style="color:#a9b4c2">• Use arrows to navigate</span></div>
+          <div class="timer" id="timerBox">00:00</div>
+        </div>
+        <div class="question" id="qText"></div>
+        <div class="choices" id="choices"></div>
+
+        <div class="sep"></div>
+        <div class="row" style="justify-content:space-between">
+          <div class="row">
+            <button class="btn" id="prevBtn">Prev</button>
+            <button class="btn" id="nextBtn">Next</button>
+            <button class="btn" id="flagBtn">Flag for review</button>
+          </div>
+          <button class="btn danger" id="finishBtn">Finish & Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- REPORT VIEW -->
+    <div id="view-report" class="exam-shell hidden">
+      <div class="panel">
+        <h2>Score report</h2>
+        <div id="scoreLine" class="row" style="margin:10px 0"></div>
+        <div id="reportMeta" class="sub"></div>
+        <div class="sep"></div>
+        <div class="row" style="justify-content:space-between">
+          <button class="btn primary" id="newAttemptBtn">New attempt</button>
+        </div>
+      </div>
+      <div style="height:12px"></div>
+      <div id="reviewList" class="grid" style="grid-template-columns:1fr"></div>
+      <div class="footer-note">Abdulaziz Al-Adlam Al-Enazi</div>
+    </div>
+
+  </div>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
