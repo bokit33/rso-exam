@@ -5,114 +5,380 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>RSO Exam Simulator</title>
   <link rel="stylesheet" href="./assets/style.css" />
+  <style>
+    /* Pearson-like layout helpers (safe to keep here even if style.css exists) */
+    .pv-topbar{
+      position:sticky; top:0; z-index:50;
+      background:linear-gradient(0deg,#0b5e97,#0b5e97);
+      color:#fff;
+      border-bottom:2px solid rgba(255,255,255,.12);
+      padding:10px 14px;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+    }
+    .pv-title{font-weight:900; font-size:14px; letter-spacing:.2px}
+    .pv-sub{opacity:.9; font-size:12px}
+    .pv-actions{display:flex; align-items:center; gap:10px}
+    .pv-link{
+      background:transparent; border:0; color:#fff; cursor:pointer;
+      font-weight:800; font-size:13px; padding:6px 8px;
+      opacity:.95;
+    }
+    .pv-link:hover{opacity:1; text-decoration:underline}
+    .pv-pill{
+      background:#073a5f; border:1px solid rgba(255,255,255,.22);
+      border-radius:999px; padding:6px 10px; font-weight:900; font-size:13px;
+      white-space:nowrap;
+    }
+
+    /* Pearson-like exam frame */
+    .pv-shell{max-width:1400px; margin:0 auto; padding:12px}
+    .pv-grid{display:grid; grid-template-columns:280px 1fr; gap:12px}
+    .pv-panel{
+      background:#fff; border:1px solid #cfd8e3; border-radius:10px;
+      box-shadow:0 6px 18px rgba(2,8,23,.08);
+    }
+    .pv-left{padding:12px}
+    .pv-left h3{margin:0 0 10px 0; font-size:13px; font-weight:900; color:#475569}
+    .pv-navgrid{display:grid; grid-template-columns:repeat(5, 1fr); gap:8px}
+    .pv-qbtn{
+      height:36px; border-radius:8px; border:1px solid #cfd8e3;
+      background:#f8fafc; font-weight:900; cursor:pointer;
+    }
+    .pv-qbtn.active{background:#0b5e97; border-color:#0b5e97; color:#fff;}
+    .pv-qbtn.answered{background:#ecfdf5; border-color:#bbf7d0;}
+    .pv-qbtn.flagged{outline:2px solid #f5a524;}
+
+    .pv-main{padding:12px}
+    .pv-qheader{
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      padding:12px; border-bottom:1px solid #e5e7eb;
+    }
+    .pv-qmeta{font-weight:900}
+    .pv-qmeta span{font-weight:800; color:#64748b}
+    .pv-question{padding:14px; font-size:16px; font-weight:900}
+    .pv-choices{padding:0 14px 10px 14px}
+    .pv-opt{
+      display:flex; gap:10px; align-items:flex-start;
+      border:1px solid #cfd8e3; border-radius:10px; padding:12px;
+      margin:10px 0; background:#f9fbfd; cursor:pointer;
+    }
+    .pv-opt.selected{border-color:#0b5e97; background:#eef6ff;}
+    .pv-opt input{margin-top:3px}
+
+    .pv-bottom{
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      padding:12px; border-top:1px solid #e5e7eb;
+    }
+    .pv-btn{
+      border:0; border-radius:10px; padding:10px 14px;
+      font-weight:900; cursor:pointer;
+    }
+    .pv-btn.secondary{background:#64748b; color:#fff;}
+    .pv-btn.primary{background:#0b5e97; color:#fff;}
+    .pv-btn.warn{background:#f5a524; color:#111827;}
+    .pv-btn.danger{background:#e11d48; color:#fff;}
+    .pv-btn:disabled{opacity:.55; cursor:not-allowed;}
+
+    /* Right dock panels */
+    .pv-dock{
+      position:fixed; right:14px; top:58px; width:360px; max-width:calc(100vw - 28px);
+      z-index:60; display:none;
+      background:#0b2236; color:#fff; border-radius:12px;
+      border:1px solid rgba(255,255,255,.12);
+      box-shadow:0 16px 50px rgba(0,0,0,.35);
+      overflow:hidden;
+    }
+    .pv-dock.light{background:#fff; color:#0f172a; border:1px solid #cfd8e3; box-shadow:0 6px 18px rgba(2,8,23,.14)}
+    .pv-dock .head{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:10px 12px; font-weight:900;
+      background:rgba(255,255,255,.06);
+      border-bottom:1px solid rgba(255,255,255,.10);
+    }
+    .pv-dock.light .head{background:#f1f5f9; border-bottom:1px solid #e5e7eb;}
+    .pv-dock .close{background:transparent; border:0; color:inherit; font-size:18px; cursor:pointer}
+
+    /* Modal (5-min warning / confirm submit) */
+    .pv-modal-backdrop{
+      position:fixed; inset:0; background:rgba(2,8,23,.55);
+      display:none; z-index:80;
+      align-items:center; justify-content:center; padding:14px;
+    }
+    .pv-modal{
+      max-width:560px; width:100%;
+      background:#fff; border-radius:12px; border:1px solid #cfd8e3;
+      box-shadow:0 20px 70px rgba(0,0,0,.35);
+      overflow:hidden;
+    }
+    .pv-modal .mhead{
+      background:#0b5e97; color:#fff; font-weight:900;
+      padding:10px 12px; display:flex; justify-content:space-between; align-items:center;
+    }
+    .pv-modal .mbody{padding:12px; color:#0f172a; font-weight:700}
+    .pv-modal .mfoot{padding:12px; display:flex; justify-content:flex-end; gap:10px; border-top:1px solid #e5e7eb}
+    .pv-mini{font-size:12px; color:#64748b; font-weight:800}
+    @media (max-width: 980px){
+      .pv-grid{grid-template-columns:1fr}
+    }
+  </style>
 </head>
+
 <body>
-  <div class="container">
-    <div class="topbar">
-      <div class="brand">
-        <div class="badge">RSO</div>
-        <div>
-          <div class="h1">RSO Exam Simulator</div>
-          <div class="sub">Pearson‑style flow • no repetition • local attempt history</div>
-        </div>
-      </div>
-      <div class="row">
-        <button class="btn" id="clearStorageBtn" title="Clear attempts and seen-question history">Reset</button>
-      </div>
+  <!-- Pearson-like top bar -->
+  <div class="pv-topbar">
+    <div>
+      <div class="pv-title" id="pvExamTitle">RSO Exam Simulator</div>
+      <div class="pv-sub" id="pvExamSub">Pearson-style flow • timed • flagging • review • calculator</div>
     </div>
 
-    <!-- START VIEW -->
-    <div id="view-start" class="exam-shell">
-      <div class="grid cols-2">
-        <div class="panel">
-          <h2>Start delivery</h2>
-          <p>This simulator is designed to feel like a real testing session: timed exam, navigation, flagging, and full review report.</p>
-          <div class="sep"></div>
+    <div class="pv-actions">
+      <button class="pv-link" id="pvChangeTrackBtn" type="button" title="Change Track / Start New Attempt">Change Track</button>
+      <button class="pv-link" id="pvCalcBtn" type="button">Calculator</button>
+      <button class="pv-link" id="pvScratchBtn" type="button">Scratch Pad</button>
+      <div class="pv-pill" id="pvTimePill">Time Remaining: --:--</div>
+    </div>
+  </div>
 
-          <label>Mode</label>
-          <select id="mode">
+  <div class="pv-shell">
+    <!-- START / TUTORIAL VIEW -->
+    <div id="view-start" class="pv-panel" style="padding:12px;">
+      <h2 style="margin:0 0 8px 0;">Start delivery</h2>
+      <div class="pv-mini" style="margin-bottom:10px;">
+        This simulator mirrors the exam flow: tutorial → select track & difficulty → timed exam → review screen → submit → score report + explanations.
+      </div>
+
+      <div class="pv-grid" style="grid-template-columns:1fr 1fr;">
+        <div class="pv-panel" style="padding:12px;">
+          <h3 style="margin:0 0 8px 0;">Exam setup</h3>
+
+          <label style="font-weight:900;">Mode</label>
+          <select id="mode" style="width:100%; padding:10px; margin-top:6px;">
             <option value="exam">Exam (review after submit)</option>
-            <option value="practice">Practice (you can still review after submit)</option>
+            <option value="practice">Practice (review after submit)</option>
           </select>
 
-          <div class="row" style="margin-top:12px">
-            <div style="flex:1">
-              <label>Questions</label>
-              <input id="count" type="number" min="5" max="200" value="75" />
-              <small>Tip: 75 mimics your current app. Use 100 for a full mock.</small>
+          <div style="display:flex; gap:10px; margin-top:10px;">
+            <div style="flex:1;">
+              <label style="font-weight:900;">Questions</label>
+              <input id="count" type="number" min="5" max="200" value="75" style="width:100%; padding:10px; margin-top:6px;" />
+              <div class="pv-mini">75 mimics your current mock.</div>
             </div>
-            <div style="flex:1">
-              <label>Timer (minutes)</label>
-              <input id="timer" type="number" min="5" max="240" value="90" />
-              <small>Set 0? (Not supported) — minimum is 5.</small>
+            <div style="flex:1;">
+              <label style="font-weight:900;">Timer (minutes)</label>
+              <input id="timer" type="number" min="5" max="240" value="90" style="width:100%; padding:10px; margin-top:6px;" />
+              <div class="pv-mini">Pearson-like timed session.</div>
             </div>
           </div>
 
-          <div class="row" style="margin-top:10px">
-            <label style="display:flex; gap:10px; align-items:center; margin:0">
-              <input id="shuffleOptions" type="checkbox" checked />
-              Shuffle options
+          <div style="display:flex; gap:14px; margin-top:10px; flex-wrap:wrap;">
+            <label style="display:flex; gap:10px; align-items:center; margin:0; font-weight:900;">
+              <input id="shuffleOptions" type="checkbox" checked /> Shuffle options
             </label>
-            <label style="display:flex; gap:10px; align-items:center; margin:0">
-              <input id="avoidAcross" type="checkbox" checked />
-              Avoid repeats across attempts (local)
+            <label style="display:flex; gap:10px; align-items:center; margin:0; font-weight:900;">
+              <input id="avoidAcross" type="checkbox" checked /> Avoid repeats across attempts (local)
             </label>
           </div>
 
-          <div class="sep"></div>
-          <button class="btn primary" id="startBtn">Start Exam</button>
-          <p class="footer-note">Shortcuts during exam: <span class="kbd">1-4</span> choose • <span class="kbd">←</span>/<span class="kbd">→</span> navigate • <span class="kbd">F</span> flag</p>
+          <div style="margin-top:10px;">
+            <label style="font-weight:900;">Difficulty</label>
+            <select id="difficulty" style="width:100%; padding:10px; margin-top:6px;">
+              <option value="mixed" selected>Mixed (Exam-like)</option>
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard_standard">Hard Standard</option>
+              <option value="hard_advanced">Hard Advanced</option>
+              <option value="hard_mix">Hard (70% Standard / 30% Advanced)</option>
+            </select>
+          </div>
+
+          <div style="display:flex; gap:10px; margin-top:12px; align-items:center;">
+            <button class="pv-btn primary" id="startBtn" type="button">Start Exam</button>
+            <button class="pv-btn secondary" id="clearStorageBtn" type="button" title="Clear attempts and seen-question history">Reset</button>
+          </div>
+
+          <div class="pv-mini" style="margin-top:10px;">
+            Shortcuts: <b>1-4</b> choose • <b>←</b>/<b>→</b> navigate • <b>F</b> flag
+          </div>
         </div>
 
-        <div class="panel">
-          <h2>Select question banks</h2>
-          <p>Pick one or multiple banks. Questions are de-duplicated (by stable id or normalized text) before selection.</p>
-          <div class="sep"></div>
+        <div class="pv-panel" style="padding:12px;">
+          <h3 style="margin:0 0 8px 0;">Select question banks</h3>
+          <div class="pv-mini" style="margin-bottom:10px;">
+            Pick one or multiple banks. Questions are de-duplicated before selection.
+          </div>
           <div id="banks-list" class="grid" style="grid-template-columns:1fr"></div>
         </div>
       </div>
     </div>
 
     <!-- EXAM VIEW -->
-    <div id="view-exam" class="exam-shell hidden">
-      <div class="panel">
-        <div class="q-header">
-          <div class="pill"><b id="qNum">Q1</b> <span style="color:#a9b4c2">• Use arrows to navigate</span></div>
-          <div class="timer" id="timerBox">00:00</div>
+    <div id="view-exam" class="pv-grid hidden" style="margin-top:12px;">
+      <aside class="pv-panel pv-left">
+        <h3>Question Navigator</h3>
+        <div class="pv-mini" style="margin:0 0 10px 0;">
+          <span style="display:inline-block;width:10px;height:10px;background:#0b5e97;border-radius:3px;vertical-align:middle;"></span>
+          <span> Current</span>
+          <span style="margin-left:12px;display:inline-block;width:10px;height:10px;background:#ecfdf5;border:1px solid #bbf7d0;border-radius:3px;vertical-align:middle;"></span>
+          <span> Answered</span>
+          <span style="margin-left:12px;display:inline-block;width:10px;height:10px;border:2px solid #f5a524;border-radius:3px;vertical-align:middle;"></span>
+          <span> Flagged</span>
         </div>
-        <div class="question" id="qText"></div>
-        <div class="choices" id="choices"></div>
+        <div class="pv-navgrid" id="nav"></div>
+      </aside>
 
-        <div class="sep"></div>
-        <div class="row" style="justify-content:space-between">
-          <div class="row">
-            <button class="btn" id="prevBtn">Prev</button>
-            <button class="btn" id="nextBtn">Next</button>
-            <button class="btn" id="flagBtn">Flag for review</button>
+      <section class="pv-panel">
+        <div class="pv-qheader">
+          <div class="pv-qmeta">
+            <span id="pvProgress">1 of 75</span>
+            <span style="margin-left:10px;">•</span>
+            <span style="margin-left:10px;" id="pvTrackLabel">Track: --</span>
           </div>
-          <button class="btn danger" id="finishBtn">Finish & Submit</button>
+          <div class="pv-pill" id="timerBox">--:--</div>
         </div>
+
+        <div class="pv-question" id="qText">Loading…</div>
+        <div class="pv-choices" id="choices"></div>
+
+        <div class="pv-bottom">
+          <div style="display:flex; gap:10px; align-items:center;">
+            <button class="pv-btn secondary" id="prevBtn" type="button">Previous</button>
+            <button class="pv-btn primary" id="nextBtn" type="button">Next</button>
+          </div>
+          <div style="display:flex; gap:10px; align-items:center;">
+            <button class="pv-btn warn" id="flagBtn" type="button">Flag for Review</button>
+            <button class="pv-btn danger" id="finishBtn" type="button">End Exam</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- REVIEW VIEW (Pearson-like) -->
+    <div id="view-review" class="pv-panel hidden" style="margin-top:12px; padding:12px;">
+      <h2 style="margin:0 0 8px 0;">Review</h2>
+      <div class="pv-mini" id="reviewSummary">Check unanswered or flagged questions before submitting.</div>
+      <div style="height:10px"></div>
+
+      <div class="pv-panel" style="padding:12px;">
+        <div id="reviewGrid" class="pv-navgrid" style="grid-template-columns:repeat(10, 1fr);"></div>
       </div>
+
+      <div style="height:10px"></div>
+      <div style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+        <button class="pv-btn secondary" id="returnToExamBtn" type="button">Return to Exam</button>
+        <button class="pv-btn danger" id="submitExamBtn" type="button">Submit Exam</button>
+      </div>
+      <div class="pv-mini" style="margin-top:8px;">Submitting will finalize your score report and show explanations.</div>
     </div>
 
     <!-- REPORT VIEW -->
-    <div id="view-report" class="exam-shell hidden">
-      <div class="panel">
-        <h2>Score report</h2>
-        <div id="scoreLine" class="row" style="margin:10px 0"></div>
-        <div id="reportMeta" class="sub"></div>
-        <div class="sep"></div>
-        <div class="row" style="justify-content:space-between">
-          <button class="btn primary" id="newAttemptBtn">New attempt</button>
-        </div>
-      </div>
+    <div id="view-report" class="pv-panel hidden" style="margin-top:12px; padding:12px;">
+      <h2 style="margin:0 0 8px 0;">Score report</h2>
+      <div id="scoreLine" style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;"></div>
+      <div id="reportMeta" class="pv-mini" style="margin-top:6px;"></div>
+
+      <div style="height:10px"></div>
+      <button class="pv-btn primary" id="newAttemptBtn" type="button">New attempt</button>
+
       <div style="height:12px"></div>
       <div id="reviewList" class="grid" style="grid-template-columns:1fr"></div>
-      <div class="footer-note">Abdulaziz Al-Adlam Al-Enazi</div>
-    </div>
 
+      <div class="pv-mini" style="margin-top:12px; text-align:center;">
+        © Abdulaziz Al-Adlam Al-Enazi
+      </div>
+    </div>
+  </div>
+
+  <!-- Calculator dock (your app.js can render the full keypad here) -->
+  <div class="pv-dock" id="calcDock" aria-hidden="true">
+    <div class="head">
+      <div>Calculator</div>
+      <button class="close" id="calcClose" type="button">✕</button>
+    </div>
+    <div style="padding:12px" id="calcMount">
+      <!-- app.js can inject a scientific calculator here -->
+      <div class="pv-mini" style="opacity:.9">
+        Calculator panel ready. (If you already have calculator code, mount it into <b>#calcMount</b>.)
+      </div>
+    </div>
+  </div>
+
+  <!-- Scratch dock -->
+  <div class="pv-dock light" id="scratchDock" aria-hidden="true">
+    <div class="head">
+      <div>Scratch Pad</div>
+      <button class="close" id="scratchClose" type="button">✕</button>
+    </div>
+    <textarea id="scratchText" style="width:100%;height:320px;border:0;outline:none;padding:12px;font-size:14px;resize:none" placeholder="Type notes here… (saved on this browser)"></textarea>
+  </div>
+
+  <!-- Modal (confirm / warnings) -->
+  <div class="pv-modal-backdrop" id="pvModalBackdrop">
+    <div class="pv-modal" role="dialog" aria-modal="true">
+      <div class="mhead">
+        <div id="pvModalTitle">Message</div>
+        <button class="pv-link" id="pvModalX" type="button" style="padding:0 6px;">✕</button>
+      </div>
+      <div class="mbody" id="pvModalBody">…</div>
+      <div class="mfoot" id="pvModalFoot"></div>
+    </div>
   </div>
 
   <script type="module" src="./js/app.js"></script>
+
+  <script>
+    // Minimal UI helpers that won't conflict with app.js
+    const $ = (id)=>document.getElementById(id);
+
+    // Scratch persistence (safe even if app.js does not manage it)
+    const stKey = "rso_scratch_v2";
+    const scratchText = $("scratchText");
+    if (scratchText){
+      scratchText.value = localStorage.getItem(stKey) || "";
+      scratchText.addEventListener("input", ()=>localStorage.setItem(stKey, scratchText.value));
+    }
+
+    // Docks toggles (app.js can also toggle; this is just fallback)
+    function toggleDock(el, show){
+      if(!el) return;
+      const isOpen = el.style.display === "block";
+      const next = (show === undefined) ? !isOpen : show;
+      el.style.display = next ? "block" : "none";
+      el.setAttribute("aria-hidden", next ? "false" : "true");
+    }
+
+    $("pvCalcBtn")?.addEventListener("click", ()=>toggleDock($("calcDock")));
+    $("calcClose")?.addEventListener("click", ()=>toggleDock($("calcDock"), false));
+
+    $("pvScratchBtn")?.addEventListener("click", ()=>toggleDock($("scratchDock")));
+    $("scratchClose")?.addEventListener("click", ()=>toggleDock($("scratchDock"), false));
+
+    // Modal API for app.js to use
+    window.PVModal = {
+      open({title, body, buttons}){
+        const bd = $("pvModalBackdrop");
+        $("pvModalTitle").textContent = title || "Message";
+        $("pvModalBody").innerHTML = body || "";
+        const foot = $("pvModalFoot");
+        foot.innerHTML = "";
+        (buttons || [{label:"OK", cls:"pv-btn primary", onClick:()=>window.PVModal.close()}]).forEach(b=>{
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = b.cls || "pv-btn primary";
+          btn.textContent = b.label || "OK";
+          btn.addEventListener("click", ()=>{ try{ b.onClick?.(); } finally{} });
+          foot.appendChild(btn);
+        });
+        bd.style.display = "flex";
+      },
+      close(){
+        const bd = $("pvModalBackdrop");
+        bd.style.display = "none";
+      }
+    };
+    $("pvModalX")?.addEventListener("click", ()=>window.PVModal.close());
+    $("pvModalBackdrop")?.addEventListener("click", (e)=>{
+      if(e.target?.id === "pvModalBackdrop") window.PVModal.close();
+    });
+  </script>
 </body>
 </html>
